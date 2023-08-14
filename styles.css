@@ -200,12 +200,14 @@ font-weight: bold;
       }
     }
 
-	.button,
+	.button:nth-child(2),
+	.button:nth-child(3),
 	.download-button {
 		transition: transform 0.3s ease-in-out;
 	}
 
-	.button:hover,
+	.button:nth-child(2):hover,
+	.button:nth-child(3):hover,
 	.download-button:hover {
 		transform: scale(1.01);
 	}
