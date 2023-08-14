@@ -199,3 +199,13 @@ font-weight: bold;
         width: 100%;
       }
     }
+
+	.button,
+	.download-button {
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.button:hover,
+	.download-button:hover {
+		transform: scale(1.01);
+	}
