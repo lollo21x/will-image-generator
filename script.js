@@ -1,6 +1,6 @@
 async function query(data) {
   const response = await fetch(
-    "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-2-1",
+    "https://api-inference.huggingface.co/models/segmind/Segmind-Vega",
     {
       headers: { Authorization: "Bearer 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" },
       method: "POST",
@@ -101,5 +101,3 @@ function generateRandomDescription() {
 
   document.getElementById("input-text").value = randomDescription;
 }
-
-// ... Aggiungi altre funzioni se necessario ...
