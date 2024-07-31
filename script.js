@@ -100,4 +100,11 @@ function generateRandomDescription() {
   var randomDescription = descriptions[randomIndex];
 
   document.getElementById("input-text").value = randomDescription;
+  toggleButton(); // Ensure the button state updates when random text is inserted
+}
+
+function toggleButton() {
+  var inputText = document.getElementById("input-text").value;
+  var generateButton = document.getElementById("generate-button");
+  generateButton.disabled = inputText.trim() === "";
 }
