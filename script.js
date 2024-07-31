@@ -1,8 +1,8 @@
 async function query(data) {
   const response = await fetch(
-    "https://api-inference.huggingface.co/models/segmind/Segmind-Vega",
+    "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0",
     {
-      headers: { Authorization: "Bearer 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" },
+      headers: { Authorization: "Bearer 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" },
       method: "POST",
       body: JSON.stringify(data),
     }
