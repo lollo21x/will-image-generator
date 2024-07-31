@@ -8,18 +8,18 @@
 </head>
 <body>
   <div class="container">
-    <h1>Will Image Generator<span class="betabox">Beta</span></h1>
+    <h1>Will Image Generator<span class="betabox">v 5.1</span></h1>
     <div class="input-container">
-      <textarea id="input-text" class="textarea" placeholder="Cosa vuoi generare oggi?" onkeydown="handleKeyDown(event)"></textarea>
-      <button class="button" onclick="generateImage()">Genera immagine</button>
-      <button class="button" onclick="generateRandomDescription()">Sorprendimi</button>
+      <textarea id="input-text" class="textarea" placeholder="What do you want to generate today?" onkeydown="handleKeyDown(event)"></textarea>
+      <button class="button" onclick="generateImage()">Generate image</button>
+      <button class="button" onclick="generateRandomDescription()">Surprise me</button>
     </div>
     <div id="result"></div>
-    <p id="loading-message" class="loading-message">L'IA sta elaborando l'immagine...</p>
-    <a id="download-button" class="download-button" style="display: none;">Scarica immagine</a>
+    <p id="loading-message" class="loading-message">Will is processing the requested image...</p>
+    <a id="download-button" class="download-button" style="display: none;">Download</a>
     <div class="result"></div>
     <div class="disclaimer">
-      Il modello è attualmente in fase di test e potrebbe fornire informazioni errate, è preferibile l'uso della lingua inglese. Versione 4.2 | 17/12/23
+      The model is currently being tested and may provide incorrect information; use of English is preferred. Version 5.1 | 31/07/24
     </div>
   </div>
 
