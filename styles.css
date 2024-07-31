@@ -58,6 +58,11 @@ h1 {
   background-color: #efefef;
 }
 
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 #result {
   margin-top: 20px;
   display: flex;
@@ -157,8 +162,13 @@ h1 {
   transition: transform 0.3s ease-in-out;
 }
 
-.button:nth-child(2):hover,
+.button:nth-child(2):hover:enabled,
 .button:nth-child(3):hover,
 .download-button:hover {
   transform: scale(1.01);
+}
+
+.button:disabled:hover {
+  transform: none;
+  cursor: not-allowed;
 }
